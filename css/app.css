@@ -1,0 +1,262 @@
+body,
+html {
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  border-bottom: 0.5px solid #ddd;
+}
+
+header .logo img {
+  padding-top: 10px;
+  height: 40px;
+}
+
+#nav ul {
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+}
+#nav ul > li {
+  float: left;
+  list-style: none;
+}
+
+#nav ul > li a {
+  color: #000;
+  text-decoration: none;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  padding: 40px 0;
+  background: #121212;
+  color: #fff;
+}
+
+footer div.footer_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_nav a {
+  color: #fff;
+}
+
+#nav a {
+  text-decoration: none;
+  padding: 21px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  position: relative;
+  text-decoration: none;
+  transition: 0.5s;
+}
+#nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+  background-color: #000000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+#nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#main {
+  width: 100%;
+  height: 400px;
+  background: url("../img/main-banner.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+#main > div {
+  height: 100%;
+  position: relative;
+}
+#main > div > div {
+  position: absolute;
+  top: 35%;
+}
+
+#main > div > div p {
+  padding: 20px 0;
+}
+
+#main > div > div a {
+  background: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#explode_nearby {
+  margin: 30px 0;
+}
+
+#explode_nearby h2 {
+  font-size: 32px;
+  padding-bottom: 32px;
+}
+
+.explore__city_list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.explore__city_list > div img {
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+}
+
+.explore__city_list > div {
+  display: flex;
+  grid-gap: 20px;
+}
+
+.explore__city_list > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.explore__city_list > div > div:last-child p {
+  font-size: 22px;
+  padding-bottom: 4px;
+}
+
+.hosting_wrapper {
+  width: 100%;
+  height: 400px;
+  margin: 70px 0;
+  border-radius: 10px;
+  background: url("../img/hosting_banner.webp");
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hosting_wrapper > div {
+  padding-left: 70px;
+  color: #fff;
+}
+
+.hosting_wrapper > div h3 {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+#auth {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#auth h2 {
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#auth > #login {
+  width: 400px;
+}
+
+#login input {
+  width: 100%;
+  outline: 0;
+  padding: 20px;
+  border: 1px solid rgb(176, 176, 176);
+  transition: 0.3s;
+}
+
+#login input.with-error {
+  background: rgb(255, 152, 167);
+}
+
+#login > div:nth-child(2) > input {
+  border-bottom-width: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#login > div:nth-child(3) > input {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+#login > .signin button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  background: rgb(255, 56, 92);
+  cursor: pointer;
+}
+
+#persons {
+  padding: 20px 0;
+}
+
+.persons {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.persons > div img {
+  width: 100%;
+}
+
+.persons > div span {
+  font-size: 22px;
+}
+
+.team h1 {
+  padding: 30px 0;
+  font-size: 40px;
+}
