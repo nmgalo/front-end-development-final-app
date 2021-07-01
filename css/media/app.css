@@ -59,8 +59,13 @@
   top: 15%;
 }
 
+#hotels,
 .explore__city_list {
   grid-template-columns: repeat(1, 1fr);
+}
+
+#hotels > div img {
+  height: 240px;
 }
 
 .explore__city_list > div img {
